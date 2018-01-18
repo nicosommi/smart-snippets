@@ -1,6 +1,6 @@
 {
   "name": "gene-js",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "an add utility",
   "main": "index.js",
   "bin": "./dist/bin/updateRegions.js",
@@ -28,7 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-preset-es2017": "^6.24.1",
-    "block-js": "^0.1.0",
+    "block-js": "^0.2.0",
     "bluebird": "^3.5.0",
     "common-tags": "^1.2.2",
     "cuid": "^1.3.8",

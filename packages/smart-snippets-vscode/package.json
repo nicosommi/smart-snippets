@@ -2,7 +2,7 @@
     "name": "smart-snippets-vscode",
     "displayName": "smart-snippets-vscode",
     "description": "Extension to manage smart snippets within vscode",
-    "version": "0.0.1",
+    "version": "0.2.0",
     "publisher": "nicosommi",
     "engines": {
         "vscode": "^1.19.0"
@@ -42,6 +42,6 @@
         "vscode": "^1.1.6"
     },
     "dependencies": {
-        "smart-snippets": "^0.0.1"
+        "smart-snippets": "^0.2.0"
     }
 }
