@@ -1,0 +1,13 @@
+{
+  "lerna": "2.5.1",
+  "packages": [
+    "packages/*"
+  ],
+  "private": true,
+  "devDependencies": {
+    "lerna": "^2.5.1"
+  },
+  "version": "0.0.0",
+  "npmClient": "yarn",
+  "npmClientArgs": ["--production", "--no-optional"]
+}
