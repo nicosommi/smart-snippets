@@ -1,24 +1,30 @@
 {
     "name": "smart-snippets-vscode",
     "displayName": "smart-snippets-vscode",
-    "description": "extension to manage smart snippets within vscode",
+    "description": "Extension to manage smart snippets within vscode",
     "version": "0.0.1",
     "publisher": "nicosommi",
     "engines": {
         "vscode": "^1.19.0"
     },
     "categories": [
-        "Other"
+        "Tools",
+        "Development"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.save",
+        "onCommand:extension.update"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.save",
+                "title": "Save current archeype to Smart Snippet workspace"
+            },
+            {
+                "command": "extension.update",
+                "title": "Update regions from Smart Snippet workspace"
             }
         ]
     },
