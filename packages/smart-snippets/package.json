@@ -2,6 +2,7 @@
   "name": "smart-snippets",
   "version": "0.0.1",
   "description": "",
+  "bin": "dist/bin/smartSnippets.js",
   "main": "dist/index.js",
   "watch": {
     "test": {
@@ -26,6 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/cucumber": "^3.2.1",
+    "@types/expect": "^1.20.2",
     "@types/fs-extra": "^5.0.0",
     "@types/meow": "^3.6.2",
     "@types/shelljs": "^0.7.7",

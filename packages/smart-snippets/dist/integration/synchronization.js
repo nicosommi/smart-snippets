@@ -22,6 +22,7 @@ const os = require("os");
 const _1 = require("../");
 const expect = require("expect");
 const { Given, When, Then } = require('cucumber');
+const testWorkspace = `${__dirname}/.testws`;
 let WorldPart = class WorldPart {
     constructor() {
         this.properties = {};
@@ -73,10 +74,10 @@ let WorldPart = class WorldPart {
         return __awaiter(this, void 0, void 0, function* () {
             switch (subcommand.toLowerCase()) {
                 case 'save':
-                    yield _1.saveSmartSnippet(this.arguments['base']);
+                    yield _1.saveSmartSnippet(this.arguments['base'], testWorkspace);
                     break;
                 case 'update':
-                    yield _1.updateFromSmartSnippet(this.arguments['target']);
+                    yield _1.updateFromSmartSnippet(this.arguments['target'], testWorkspace);
                     break;
             }
         });

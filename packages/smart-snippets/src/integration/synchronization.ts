@@ -9,6 +9,8 @@ import * as expect from 'expect'
 
 const { Given, When, Then } = require('cucumber')
 
+const testWorkspace = `${__dirname}/.testws`
+
 type CallbackType = (err: Error, res: any) => void
 
 @binding()
@@ -62,10 +64,10 @@ export default class WorldPart {
   public async theUserExecutesTheCommandSmartsnippetscreate(subcommand: string): Promise<void> {
     switch (subcommand.toLowerCase()) {
       case 'save':
-        await saveSmartSnippet(this.arguments['base'])
+        await saveSmartSnippet(this.arguments['base'], testWorkspace)
         break
       case 'update':
-        await updateFromSmartSnippet(this.arguments['target'])
+        await updateFromSmartSnippet(this.arguments['target'], testWorkspace)
         break
     }
   }

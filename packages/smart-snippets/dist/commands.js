@@ -35,7 +35,6 @@ const command = m(`
     }
 });
 function execute() {
-    console.log('using - ', { file: command.flags.file, ws: command.flags.workspace });
     switch (command.input[0]) {
         case 'save':
             return index_1.saveSmartSnippet(command.flags.file, command.flags.workspace);
