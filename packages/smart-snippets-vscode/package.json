@@ -8,8 +8,8 @@
         "vscode": "^1.19.0"
     },
     "categories": [
-        "Tools",
-        "Development"
+        "Other",
+        "Snippets"
     ],
     "activationEvents": [
         "onCommand:extension.save",
