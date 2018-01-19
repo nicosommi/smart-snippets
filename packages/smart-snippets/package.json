@@ -1,6 +1,6 @@
 {
   "name": "smart-snippets",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "bin": "dist/bin/smartSnippets.js",
   "main": "dist/index.js",
@@ -26,21 +26,23 @@
   "author": "nicosommi",
   "license": "MIT",
   "dependencies": {
-    "@types/cucumber": "^2.2",
-    "@types/expect": "^1.20.2",
     "@types/fs-extra": "^5.0.0",
     "@types/meow": "^3.6.2",
     "@types/shelljs": "^0.7.7",
-    "cucumber": "^2.2",
-    "cucumber-tsflow": "^2.2.0",
     "expect": "^22.1.0",
     "fs-extra": "^5.0.0",
-    "gene-js": "^0.2.1",
+    "gene-js": "^0.2.2",
     "meow": "^4.0.0",
     "npm-run-all": "^4.1.2",
     "npm-watch": "^0.3.0",
     "shelljs": "^0.8.0",
     "ts-node": "^4.1.0",
     "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/cucumber": "^2.1.0",
+    "@types/expect": "^1.20.2",
+    "cucumber": "^2.3.1",
+    "cucumber-tsflow": "^2.2.0"
   }
 }
