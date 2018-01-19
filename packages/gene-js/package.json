@@ -63,7 +63,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicosommi/gene-js.git"
+    "url": "https://github.com/nicosommi/smart-snippets.git"
   },
   "readmeFilename": "README.md",
   "contributors": [],

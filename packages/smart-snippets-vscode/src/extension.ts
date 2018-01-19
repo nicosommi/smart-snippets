@@ -30,7 +30,6 @@ export function activate(context: vscode.ExtensionContext) {
     workspace = workspace.replace('${workspaceRoot}', vscode.workspace.rootPath)
 
     let saveCommand = vscode.commands.registerCommand('extension.save', async () => {
-        vscode.window.showInformationMessage('workspace is ' + workspace)
         const editor = getActiveEditor()
         if(!editor) return
 

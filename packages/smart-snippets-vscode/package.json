@@ -2,8 +2,13 @@
     "name": "smart-snippets-vscode",
     "displayName": "smart-snippets-vscode",
     "description": "Extension to manage smart snippets within vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nicosommi/smart-snippets.git"
+    },
     "version": "0.2.2",
     "publisher": "nicosommi",
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.19.0"
     },

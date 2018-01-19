@@ -10,12 +10,10 @@
 <!-- endph -->
 
 <!-- ph description -->
-This is a work in progress in early stages. Many changes are planned.
+This is a work in progress in early stages.
 
-Utiliy that implements GDD (generation driven development) operations.  
 It's responsibility is to get the meta information from genes and synchronize them.  
-It is used by gddify and relies in block-js.  
-Read more about GDD on [my blog](http://nicosommi.com)
+It is used by smart snippets and relies in block-js.  
 <!-- endph -->
 
 <!-- ph usagesAndExamples -->
@@ -47,8 +45,6 @@ npm install gene-js --save
 
 You can submit your ideas through our [issues system](https://github.com/nicosommi/gene-js/issues), or make the modifications yourself and submit them to us in the form of a [GitHub pull request](https://help.github.com/articles/using-pull-requests/).
 
-For GDD-related service [go here](http://integracionesagiles.com)
-Or contact me to nicosommi@gmail.com for any business related thing or anything else.
 <!-- endstamp -->
 <!-- stamp runningtests -->
 ## Running Tests
