@@ -11,6 +11,9 @@ export default class Apple {
     this.seed = "AppleSeed001"
     this.color = "red"
     /* endph */
+    // this.meta = 'appleseed' // stamp meta (ignored)
+    // this.meta2 = 'another' // stamp meta2 (ignored)
+    this.meta3 = 'another' // stamp meta3
   }
 
   peel () {

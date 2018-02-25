@@ -369,7 +369,11 @@ var FilePad = function () {
   }, {
     key: 'buildOneLinerBlock',
     value: function buildOneLinerBlock(blockName, block) {
-      return this.delimiters.inline + ' ' + blockName + ' ' + block.name;
+      var res = this.delimiters.inline + ' ' + blockName + ' ' + block.name;
+      if (block.flags) {
+        res = res + ' (' + block.flags + ')';
+      }
+      return res;
     }
   }, {
     key: 'buildBlockHeader',
@@ -395,9 +399,6 @@ var FilePad = function () {
   }, {
     key: 'processLine',
     value: function processLine(l, ln) {
-      // FIXME:
-      // - stamp uncomment and comment if necessary, and with line indentation
-      // - execute replacements
       var ph = this.getPhByLineNumber(ln);
       if (ph) {
         if (this.isOneLiner(ph)) {

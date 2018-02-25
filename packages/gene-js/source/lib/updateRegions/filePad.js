@@ -234,12 +234,16 @@ export default class FilePad {
   }
   
   buildOneLinerBlock(blockName, block) {
-    return `${this.delimiters.inline} ${blockName} ${block.name}`
+    let res = `${this.delimiters.inline} ${blockName} ${block.name}`
+    if (block.flags) {
+      res = `${res} (${block.flags})`
+    }
+    return res
   }
   
   buildBlockHeader(blockName, block, originalLine = '') {
     let flags = ''
-    if(block.flags) {
+    if (block.flags) {
       flags = `(${block.flags}) `
     }
     let prefix = ''
@@ -255,9 +259,6 @@ export default class FilePad {
   }
   
   processLine(l, ln) {
-    // FIXME:
-    // - stamp uncomment and comment if necessary, and with line indentation
-    // - execute replacements
     const ph = this.getPhByLineNumber(ln)
     if (ph) {
       if(this.isOneLiner(ph)) {

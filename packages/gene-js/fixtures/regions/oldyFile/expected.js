@@ -11,6 +11,9 @@ export default class Banana {
     this.seed = "BananaSeed001"
     this.color = "yellow"
     /* endph */
+    // this.meta = 'appleseed' // stamp meta (ignored)
+    this.meta2 = 'another' // stamp meta2
+    // this.meta3 = 'another' // stamp meta3 (ignored)
   }
 
   peel () {
